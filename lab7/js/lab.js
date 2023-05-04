@@ -16,8 +16,13 @@ function myusername() {
   var nameSorted = nameArraySort.join('');
   console.log("nameSorted =", nameSorted);
 
+  var nameSortArray = nameArray.sort(function(a, b) {
+    return a.localeCompare(b, undefined, {sensitivity: 'base'});
+  });
+
   return nameSorted;
 }
+
 
 // Output
 document.writeln("I fixed your name: ",
