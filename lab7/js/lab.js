@@ -23,7 +23,6 @@ function myusername() {
   return nameSorted;
 }
 
-
 // Output
 document.writeln("I fixed your name: ",
   myusername(), "</br>");
