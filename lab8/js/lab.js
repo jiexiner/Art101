@@ -19,3 +19,11 @@ var result = array.map(function(x){
   return x ** 0.5;
 })
 console.log("Squareroot the array", result);
+
+//Print in HTML
+var OutputEL = document.getElementById("output");
+OutputEL.innerHTML = "My Array: " + array.join(", ") + "<br>" +
+                     "Square of 10: " + square(10) + "<br>" +
+                     "Square of 10: " + square(15) + "<br>" +
+                     "Even number of Array: " + result.join(", ") + "<br>" +
+                     "Squareroot of Array" + result.join(", ");
