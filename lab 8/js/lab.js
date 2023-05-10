@@ -1,21 +1,21 @@
-// index.js - purpose and description here
-// Author: Your Name
-// Date:
+/**
+* index.js - Anon Functions and Callbacks
+* Author:    Jing Li
+* Created:   05.09.2023
+**/
 
-// Constants
-
-// Functions
-
-// this is an example function and this comment tells what it doees and what parameters are passed to it.
-function myFunction(param1, param2) {
-  // some code here
-  // return results;
+// Set my array
+array = [16, 17, 28, 25, 44, 18, 21]
+console.log("My array", array);
+//Check if my number is even or add
+function isEven(x){
+  return (x % 2 == 0);
 }
+var result = array.map(isEven);
+console.log("Test wether the number is even or not", result);
 
-function main() {
-  console.log("Main function started.");
-  // the code that makes everything happen
-}
-
-// let's get this party started
-main();
+//Squareroot all my numbers
+var result = array.map(function(x){
+  return x ** 0.5;
+})
+console.log("Squareroot the array", result);
