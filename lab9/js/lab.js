@@ -1,21 +1,36 @@
-// index.js - purpose and description here
-// Author: Your Name
-// Date:
+/**
+* index.js - JavaScript for Web
+* Author:    Jing Li
+* Created:   05.11.2023
+**/
 
-// Constants
 
-// Functions
+// Use getElementById() to find your output <div> and assign it to a variable outputEl
+var outputEl = document.getElementById("output");
 
-// this is an example function and this comment tells what it doees and what parameters are passed to it.
-function myFunction(param1, param2) {
-  // some code here
-  // return results;
-}
+// Create a new element with document.createElement("p") and assign it to a variable new1El
+var new1El = document.createElement("p");
 
-function main() {
-  console.log("Main function started.");
-  // the code that makes everything happen
-}
+// Change the html attribute of new1El to say something new.
+new1El.innerHTML = "Test Element no.1";
 
-// let's get this party started
-main();
+// Create another new element and assign it to a variable new2El
+var new2El = document.createElement("p");
+
+// Change the html attribute of new2El to say something else.
+new2El.innerHTML = "Test Element no.2";
+
+// Append both new elements one at a time using appendChild() to your output <div>
+outputEl.appendChild(new1El);
+outputEl.appendChild(new2El);
+
+// Change the css attributes of at least two elements of your page
+new1El.style.color = "#f6b3d3";
+new2El.style.backgroundColor = "#f180b7";
+
+// Task Bonus:
+var myDiv = document.getElementById("myDiv");
+var newEl = document.createElement("p");
+newEl.innerHTML = "New Element";
+
+myDiv.insertBefore(newEl, myDiv.firstChild);
